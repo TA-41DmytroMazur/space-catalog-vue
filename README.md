@@ -55,5 +55,5 @@
   ```
 
 ## Публікація (GitHub Pages / Netlify)
-- **GitHub Pages**: у репозиторії налаштовано workflow `.github/workflows/deploy.yml` (у `vite.config.js` вказано `base: './'`). Після завантаження коду на GitHub увімкніть **Settings → Pages → Source: GitHub Actions**.
+- **GitHub Pages**: зібрана статична версія (`npm run build` з `base: './'` у `vite.config.js`) публікується з гілки `gh-pages` (**Settings → Pages → Source: Deploy from a branch → `gh-pages` / `(root)`**). Демо: [https://ta-41dmytromazur.github.io/space-catalog-vue/](https://ta-41dmytromazur.github.io/space-catalog-vue/)
 - **Netlify**: виконайте `npm run build` та завантажте теку `dist/` або підключіть Git-репозиторій зі збіркою `npm run build` (папка публікації: `dist`).
